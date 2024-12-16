@@ -13,7 +13,7 @@ model = 'akahana/vit-base-cats-vs-dogs'
 # Função definer o tamanho da imagem
 def show_image(image):
     image = image.copy()
-    image.thubnail((250, 250)) # Tamanho da imagem
+    image.thumbnail((250, 250)) # Tamanho da imagem
     display(image)
 
     
