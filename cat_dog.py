@@ -9,7 +9,7 @@ database = load_dataset('Bingsu/Cat_and_Dog', split='test')
 # Variavel line recebe 10 imagens aleatorias
 line = database.shuffle()[:10]
 model = 'akahana/vit-base-cats-vs-dogs'
-  
+
 # Função definer o tamanho da imagem
 def show_image(image):
     image = image.copy()
@@ -24,3 +24,4 @@ for image in line['image']:
     result = classifier(image)
     print(result)  
     show_image(image)
+    
